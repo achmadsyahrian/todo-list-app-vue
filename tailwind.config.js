@@ -5,7 +5,15 @@ module.exports = {
     './src/**/*.{vue,js,ts,jsx,tsx}' // Pastikan Vue file diikutkan
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
+      colors: {
+        primary: '#e11d48',
+      },
+
+    },
   },
   plugins: [],
 }
