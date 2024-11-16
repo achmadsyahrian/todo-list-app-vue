@@ -16,7 +16,7 @@
         <form @submit.prevent="handleRegister" class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md">
           <div class="mb-6">
             <h2 class="text-base/7 font-semibold text-gray-900 dark:text-slate-100">Register Your Account</h2>
-            <p class="mt-1 text-sm/6 text-gray-400">Please provide accurate information for your account.</p>
+            <p class="mt-1 text-sm/6 text-gray-500 dark:text-gray-400">Please provide accurate information for your account.</p>
           </div>
           <BaseInput v-model="name" id="name" label="Name" placeholder="Enter your name" :error="errors.name" :required="true" />
           <BaseInput v-model="email" id="email" label="Email" placeholder="Enter your email" :error="errors.email" :required="true" />
@@ -33,7 +33,7 @@
 
           <BaseButton type="submit">Register</BaseButton>
 
-          <p class="mt-6 text-center text-sm/6 text-gray-500">
+          <p class="mt-6 text-center text-sm/6 text-gray-500 dark:text-gray-400">
             Already have an account? <a href="/login" class="font-medium text-primary hover:opacity-90">Login</a>
           </p>
         </form>

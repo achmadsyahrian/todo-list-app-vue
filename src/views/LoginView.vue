@@ -16,7 +16,7 @@
          <form @submit.prevent="handleLogin" class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md">
             <div class="mb-6">
                <h2 class="text-base/7 font-semibold text-gray-900 dark:text-slate-100">Welcome Back!</h2>
-               <p class="mt-1 text-sm/6 text-gray-400">Log in to access your account and manage your dashboard.</p>
+               <p class="mt-1 text-sm/6 text-gray-500 dark:text-gray-400">Log in to access your account and manage your dashboard.</p>
             </div>
            <BaseInput v-model="email" id="email" label="Email" placeholder="Enter your email" :error="errors.email" />
            <BaseInput v-model="password" id="password" label="Password" placeholder="●●●●●●●●" :type="showPassword ? 'text' : 'password'" :error="errors.password" />
@@ -32,7 +32,7 @@
  
            <BaseButton type="submit">Log In</BaseButton>
  
-           <p class="mt-6 text-center text-sm/6 text-gray-500">
+           <p class="mt-6 text-center text-sm/6 text-gray-500 dark:text-gray-400">
              Don't have an account yet? <a href="/register" class="font-medium text-primary hover:opacity-90">Register</a>
            </p>
 
