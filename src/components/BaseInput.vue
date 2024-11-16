@@ -2,6 +2,7 @@
    <div class="mb-4">
      <label :for="id" class="text-sm font-medium text-gray-700 dark:text-slate-300">
        {{ label }}
+       <span v-if="required" class="text-red-500">*</span>
      </label>
      <input
        :id="id"
@@ -11,6 +12,9 @@
        class="w-full p-2 mt-1 border border-gray-300 dark:border-slate-700 rounded-md ring-input placeholder:text-slate-400 dark:placeholder:text-slate-500 placeholder:text-sm sm:text-sm/6 dark:bg-slate-700 dark:text-slate-100"
        @input="$emit('update:modelValue', $event.target.value)"
      />
+     
+     <!-- Slot untuk pesan error -->
+     <p v-if="error" class="mt-1 text-xs text-red-500">{{ error[0] }}</p>
    </div>
  </template>
  
@@ -37,6 +41,11 @@
        type: String,
        default: "",
      },
+     required: {
+       type: Boolean,
+       default: false,
+     },
+     error: Array, //Menerima pesan error
    },
  };
  </script> 
