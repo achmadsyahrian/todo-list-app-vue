@@ -29,7 +29,9 @@
               <label for="comments" class="font-medium text-gray-900 dark:text-slate-100">Show Password</label>
             </div>
           </div>
-          <button type="submit" class="w-full py-2 mt-4 bg-primary text-white font-semibold rounded-md hover:opacity-90">Register</button>
+          <!-- <button type="submit" class="w-full py-2 mt-4 bg-primary text-white font-semibold rounded-md hover:opacity-90">Register</button> -->
+
+          <BaseButton type="submit">Register</BaseButton>
 
           <p class="mt-6 text-center text-sm/6 text-gray-500">
             Already have an account? <a href="/login" class="font-medium text-primary hover:opacity-90">Login</a>
@@ -41,6 +43,7 @@
 </template>
 
 <script>
+import BaseButton from '@/components/BaseButton.vue';
 import BaseInput from '@/components/BaseInput.vue';
 import NotificationAlert from '@/components/NotificationAlert.vue';
 
@@ -48,7 +51,8 @@ export default {
   name: 'RegisterView',
   components: {
     BaseInput,
-    NotificationAlert
+    NotificationAlert,
+    BaseButton,
   },
   data() {
     return {
@@ -120,7 +124,7 @@ export default {
             // Sembunyikan alert setelah 3 detik
             setTimeout(() => {
               this.showAlert = false;
-            }, 3000);
+            }, 5000);
           }
         });
     },
