@@ -14,13 +14,14 @@ const routes = [
     path: '/register',
     name: 'Register',
     component: RegisterView,
+    meta: { hideNavbar: true }
   },
 
   {
     path: '/login',
     name: 'Login',
     component: LoginView,
-
+    meta: { hideNavbar: true }
   },
 
   {
