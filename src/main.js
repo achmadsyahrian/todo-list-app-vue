@@ -2,7 +2,6 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router';
 import axios from './plugins/axios';
-
 import './assets/css/tailwind.css';
 
 const app = createApp(App);
@@ -16,6 +15,6 @@ const token = localStorage.getItem('token');
 if (token) {
    axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
  }
-
+ 
 // Menggunakan router dan mount aplikasi
 app.use(router).mount('#app');

@@ -8,5 +8,5 @@ body {
 }
 
 .ring-input {
-   @apply focus:outline-none focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary;
+   @apply focus:outline-none focus-within:ring-2 focus-within:ring-inset focus-within:ring-base-primary;
 }

@@ -9,9 +9,9 @@
        :type="type"
        :value="modelValue"
        :placeholder="placeholder"
-       class="w-full p-2 mt-1 border rounded-md ring-input placeholder:text-slate-400 dark:placeholder:text-slate-500 placeholder:text-sm sm:text-sm/6 dark:bg-slate-700 dark:text-slate-100"
+       class="w-full p-2 mt-1 border rounded-md ring-input placeholder:text-slate-400 dark:placeholder:text-slate-500 placeholder:text-sm sm:text-sm/6 dark:bg-dark-tertiary dark:text-slate-100"
        :class="{
-        'border-gray-300 dark:border-slate-700': !error, 
+        'border-gray-300 dark:border-dark-tertiary': !error, 
         'border-red-500': error // Jika ada error, ubah border menjadi merah
       }"
        @input="$emit('update:modelValue', $event.target.value)"
