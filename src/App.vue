@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="dark:bg-dark-primary">
+  <div id="app" class="bg-light-primary dark:bg-dark-primary">
     <NavbarSidebar v-if="!$route.meta.hideNavbar" />
     <router-view></router-view>
   </div>

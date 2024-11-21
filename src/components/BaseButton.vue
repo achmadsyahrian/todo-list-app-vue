@@ -1,7 +1,7 @@
 <template>
    <button
      :type="type"
-     :class="['w-full py-2 mt-4 bg-base-primary text-white font-semibold rounded-md hover:opacity-90', customClass]"
+     :class="['py-2 mt-4 bg-base-primary text-white font-semibold rounded-md hover:opacity-90', customClass]"
      @click="$emit('click')"
    >
      <slot></slot>

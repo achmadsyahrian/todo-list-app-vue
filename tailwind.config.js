@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     './index.html',
     './src/**/*.{vue,js,ts,jsx,tsx}' // Pastikan Vue file diikutkan
@@ -16,11 +17,20 @@ module.exports = {
           secondary: '#fca5a5', //red-300
         },
 
+        // Light Mode
+        light: {
+          primary: '#FAFAFA',
+          secondary: '#FFFFFF',
+          tertiary: '#f3f4f6', //gray-100
+          quaternary: '#6b7280', //gray-500
+        },
+        
         // Dark Mode
         dark: {
           primary: '#09090B', //gray-900
           secondary: '#18181B', //slate-800
           tertiary: '#242427', //gray-700
+          quaternary: '#9ca3af', //gray-400
         },
       },
 
